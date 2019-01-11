@@ -28,7 +28,7 @@ describe('transformers', () => {
       b: 205
     });
 
-    expect.deepEqual(transformed, {
+    expect(transformed).toStrictEqual({
       r: 113,
       g: 113,
       b: 113
