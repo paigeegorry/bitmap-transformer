@@ -1,7 +1,6 @@
 const invert = require('../lib/invert-transformer');
 const grayscale = require('../lib/grayscale-transformer');
 const coolFilter = require('../lib/coolfilter-transformer');
-const fs = require('fs');
 
 describe('transformers', () => {
   it('invert', () => {
