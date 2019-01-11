@@ -1,5 +1,6 @@
 const invert = require('../lib/invert-transformer');
 const grayscale = require('../lib/grayscale-transformer');
+const coolFilter = require('../lib/coolfilter-transformer');
 const fs = require('fs');
 
 describe('transformers', () => {
@@ -32,6 +33,22 @@ describe('transformers', () => {
       r: 113,
       g: 113,
       b: 113
+    });
+  });
+
+  it('cool filter', () => {
+    // HINT: grayscale assigns the average of all three colors
+    // as the new value for each color
+    const transformed = coolFilter({
+      r: 34,
+      g: 100,
+      b: 205
+    });
+
+    expect(transformed).toStrictEqual({
+      r: 34,
+      g: 119.5,
+      b: 205
     });
   });
 
