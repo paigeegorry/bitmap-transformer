@@ -4,7 +4,6 @@ describe('Pixel Reader', () => {
 
   it('reads pixel from buffer', done => {
     const reader = new PixelReader({ bitsPerPixel: 24 });
-    
     const colors = [];
     
     reader.on('color', (color) => {
@@ -49,5 +48,4 @@ describe('Pixel Reader', () => {
 
     reader.read(buffer);
   });
-
 });
