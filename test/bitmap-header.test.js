@@ -1,6 +1,6 @@
 const constants = require('../lib/bitmap-constants');
 const BitmapHeader = require('../lib/bitmap-header');
-const fs = require('fs')
+const fs = require('fs');
 
 describe('bitmap header', () => {
 
